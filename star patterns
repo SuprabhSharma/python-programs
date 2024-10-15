@@ -1,0 +1,41 @@
+ for r in range(5):
+     for c in range(0,r+1):
+         print("*",end=" ")
+     print()
+
+ print()
+
+ for r in range(5):
+     for c in range(0,5-r):
+         print("*",end=" ")
+     print()
+ print()
+
+ to print a pattern 
+ n = 5
+ for i in range(n):
+     print(" "*(n-i-1) + "*"*(2*i + 1))
+ print() 
+
+ inverted pyramid
+ n = 5
+ for i in range(n):
+     print(" "*(i+1) + "*"*(9-2*i))
+
+# # diamond shape pyramid
+ n = 5
+
+ # Print Increasing Pyramid
+ for i in range(n):
+    print(" " * (n - i - 1) + "*" * (2 * i + 1))
+
+ # Print Decreasing Pyramid
+ for i in range(n - 1):  # This should be n - 1
+     print(" " * (i + 1) + "*" * (2 * (n - 1 - i) - 1))  # Corrected formula
+
+n = 5 
+for i in range(5):
+    if(i==0 or i==4):
+        print("*"*n)
+    else:
+        print("*" + " "*(n-2) + "*")
